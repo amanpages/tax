@@ -10,3 +10,10 @@
 # For proper understanding all the codes have a proper comments added.
 
 ## Page Live ON LINK:-- https://amanpages.github.io/tax/
+
+## Screenshot of all the test pages.
+
+![Screenshot 2024-04-13 at 10 41 54 PM](https://github.com/amanpages/tax/assets/151524274/e4fedf89-d443-4fc6-adca-8215c22b11af)
+![Screenshot 2024-04-13 at 10 42 52 PM](https://github.com/amanpages/tax/assets/151524274/2d145236-a1c5-4676-bb60-e75dc2f3992f)
+![Screenshot 2024-04-13 at 10 43 00 PM](https://github.com/amanpages/tax/assets/151524274/3470159c-81b8-45b4-b21a-fa273298c443)
+![Screenshot 2024-04-13 at 10 43 12 PM](https://github.com/amanpages/tax/assets/151524274/3586025a-419a-44a6-b45c-ec8d64580652)
