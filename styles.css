@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(225, 238, 194) !important;
+}
+.container{
+    width: 60% !important;
+    margin-top: 15vh !important;
+    height: 60vh;
+    border: solid 2px transparent;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    transition: background-color 0.3s ease;
+}
+.container:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+h1{
+    text-align: center;
+    color: rgb(191, 119, 25) !important;
+}
+
+[data-toggle="tooltip"] {
+    position: relative;
+    display: inline-block;
+    cursor: default; 
+}
+[data-toggle="tooltip"]:hover::before {
+    content: attr(title);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    white-space: pre-wrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    min-width: 250px;
+    word-wrap: break-word; 
+}
+
+
+[data-toggle="tooltip"]:hover::before {
+    opacity: 1;
+}
+.custom-tooltip {
+    position: absolute;
+    background-color: #df5757;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    width: max-content;
+    margin-left: 320px;
+    margin-top: -60px;
+    display: none;
+    z-index: 1000;
+}
+
+.is-invalid + .custom-tooltip {
+    display: block;
+}
+
+.custom-tooltip::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #df5757 transparent transparent transparent; 
+    bottom: -6px;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+
+#taxResult {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tax-info {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-label {
+    margin-bottom: 5px;
+}
+
+.tax-amount {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+/* CSS for the result popup */
+.result-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    text-align: center;
+    display: none;
+}
+#taxResultPopup {
+    width: 50%;
+    height: 40vh;
+}
